@@ -7,14 +7,14 @@ include(FetchContent)
 include(UnitTesting)
 
 # Task
-add_executable(unittests main.cpp fizzbuzz_test.cpp)
+add_executable(unittests fizzbuzz_test.cpp)
 
 target_link_libraries(unittests PRIVATE gtest gtest_main)
 
 gtest_add_tests(TARGET unittests)
 
 # Solution
-add_executable(unittests_solution main.cpp fizzbuzz_solution.cpp)
+add_executable(unittests_solution fizzbuzz_solution.cpp)
 
 target_link_libraries(unittests_solution PRIVATE gtest gtest_main)
 

@@ -4,7 +4,7 @@ enable_testing()
 FetchContent_Declare(
   googletest
   GIT_REPOSITORY git://github.com/google/googletest.git
-  GIT_TAG origin/master)
+  GIT_TAG origin/main)
 
 FetchContent_GetProperties(googletest)
 if(NOT googletest_POPULATED)
